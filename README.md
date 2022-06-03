@@ -2,6 +2,12 @@
 
 Read: https://code.visualstudio.com/docs/python/tutorial-flask to setup env
 
+For folder models insert:
+- https://drive.google.com/file/d/1dc81-3yQBJv6GV4ALlX6Af3zoG5F4ZTZ/view?usp=sharing
+- https://drive.google.com/file/d/1dc81-3yQBJv6GV4ALlX6Af3zoG5F4ZTZ/view?usp=sharing
+
+Insert folder "images" and "croppedImages"
+
 To run: python -m flask run
 
 Maybe:
