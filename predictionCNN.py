@@ -19,9 +19,9 @@ resnet152_pretrained_loaded.load_state_dict(torch.load(model_path))
 resnet152_pretrained_loaded.eval()
 
 _CLASSES = {
-    0: 'Neutral',
-    1: 'Relaxed',
-    2: 'Anger_Fear'
+    0: 'Anger_Fear',
+    1: 'Neutral',
+    2: 'Relaxed'
 }
 
 def predict(imagePath):
@@ -43,7 +43,6 @@ def predict(imagePath):
         prediction = resnet152_pretrained_loaded(image)
     
     probs = torch.softmax(prediction, dim=1)
-    print(probs)
     # Get the Label and Probabilities of All Emotions
     emotion_highest = _CLASSES[np.argmax(prediction).item()]
     highest_pred = torch.max(probs).item()

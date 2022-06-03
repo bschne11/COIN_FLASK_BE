@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from imageai.Detection import ObjectDetection
 import tensorflow.python.keras
 
+import time
 
 
 model_path = "./models/resnet50_coco_best_v2.1.0.h5"
@@ -17,7 +18,7 @@ basepath = os.path.dirname(__file__)
 object_detector = ObjectDetection()
 object_detector.setModelTypeAsRetinaNet()
 object_detector.setModelPath(model_path)
-object_detector.loadModel()
+object_detector.loadModel(detection_speed="faster")
 custom_cat = object_detector.CustomObjects(cat=True)
 
 padding = 0.1

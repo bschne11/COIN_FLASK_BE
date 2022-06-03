@@ -15,6 +15,7 @@ def home():
 
 @app.route('/predictEmotion', methods=['POST'])
 def predictEmotion():
+  
     # Get the file from the request
     file = request.files['file']
 
@@ -30,12 +31,9 @@ def predictEmotion():
 
     # Preprocess the image (crop it)
     preprocessed_image_result = preProcess(file_path, output_image_path)
-
     # If it is None a cat got detected
     if preprocessed_image_result is None:
-      #  class_id, class_name = predict(preprocessed_image_result)
         emotion, prob, rest = predict(output_image_path)
         return jsonify({'emotion_predicted': emotion, 'probability': prob, 'other_emotions': rest})
-      #  return jsonify({'class_id': class_id, 'class_name': class_name})
     else:
         return jsonify({'message': preprocessed_image_result})
