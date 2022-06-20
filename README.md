@@ -8,7 +8,9 @@ Insert folder "models" with following models:
 
 Insert folder "images" and "croppedImages"
 
-To run: python -m flask run
+To run:
+1) python -m flask run --host:0.0.0.0
+2) python3 -m flask run --host:0.0.0.0
 
 Maybe:
 pip install tensorflow
@@ -16,7 +18,7 @@ pip install opencv-python
 pip install imagaAI
 pip install -U numpy 
 
-.. Wahrscheinloch noch andere pip, war n Pain in the Ass
+.. Wahrscheinloch noch andere pip, war n Pain in the Ass (TRUE)
 
 
 Postman: POST http://localhost:5000/predictEmotion
