@@ -1,12 +1,10 @@
 import os
 import cv2
 import pandas as pd
-import tensorflow as tf
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
 from imageai.Detection import ObjectDetection
-import tensorflow.python.keras
+
 
 import time
 
