@@ -19,7 +19,7 @@ resnet152_pretrained_loaded.load_state_dict(torch.load(model_path))
 resnet152_pretrained_loaded.eval()
 
 _CLASSES = {
-    0: 'Anger_Fear',
+    0: 'Anger/Fear',
     1: 'Neutral',
     2: 'Relaxed'
 }
