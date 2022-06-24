@@ -1,12 +1,8 @@
 import os
 import cv2
-import pandas as pd
 import matplotlib
 matplotlib.use('TkAgg')
 from imageai.Detection import ObjectDetection
-
-
-import time
 
 
 model_path = "./models/resnet50_coco_best_v2.1.0.h5"
