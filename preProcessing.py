@@ -61,4 +61,9 @@ def preProcess(imagePath, outputPath):
             return "Empty Image"
     
     else:
+        try: 
+            os.remove(imagePath)
+        except: 
+            pass
+        
         return "No Cat Detected!"

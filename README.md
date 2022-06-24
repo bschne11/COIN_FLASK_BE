@@ -4,8 +4,7 @@ Read: https://code.visualstudio.com/docs/python/tutorial-flask to setup env
 
 Insert folder "models" with following models:
 - https://drive.google.com/file/d/1dc81-3yQBJv6GV4ALlX6Af3zoG5F4ZTZ/view?usp=sharing
-- https://drive.google.com/file/d/1dc81-3yQBJv6GV4ALlX6Af3zoG5F4ZTZ/view?usp=sharing
-
+- 152_3_01: https://drive.google.com/drive/u/0/folders/1S8Kyli2W3cx0t54x6kMRtD9Sq9181TLU
 Insert folder "images" and "croppedImages"
 
 To run:
